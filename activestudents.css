@@ -200,3 +200,12 @@ a:active {
     font-weight: bold;
     color: rgb(255, 0, 0);
 }
+
+form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.form div {
+    border: 2px solid red;
+}
