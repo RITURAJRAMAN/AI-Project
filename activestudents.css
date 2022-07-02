@@ -203,9 +203,11 @@ a:active {
 
 form {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
 }
 
 .form div {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    padding: 20px;
 }
