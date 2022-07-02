@@ -80,11 +80,21 @@ a:active {
         display: inline-block;
     }
 
+    #box2 {
+        margin-top: -20px;
+    }
+
     .smallbox {
         margin: auto;
         width: 40vw;
         height: 30vw;
         font-size: 6vw;
+    }
+
+    .btn {
+        font-size: 4vw;
+        position: relative;
+        bottom: 2px;
     }
 
     #show,
@@ -160,7 +170,7 @@ a:active {
 
 .insert {
     border: 2px solid red;
-height: 250px;
+    height: 250px;
 }
 
 .upload {
