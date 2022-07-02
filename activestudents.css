@@ -160,7 +160,7 @@ a:active {
 
 .insert {
     border: 2px solid red;
-
+height: 250px;
 }
 
 .upload {
@@ -176,12 +176,6 @@ a:active {
     background: url('images/upload-icon.jpg') no-repeat center 80px;
     background-size: 100px 100px;
 
-}
-
-.upload img {
-    margin-top: 10px;
-    height: 100px;
-    width: 100px;
 }
 
 #or {
