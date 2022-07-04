@@ -175,8 +175,41 @@ a:active {
 }
 
 .insert {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 250px;
+}
+
+form {
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form div {
+    padding: 18px;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+form .btn {
+    padding: 0;
+    width: 15vw;
+    height: 40px;
+}
+
+input {
+    height: 30px;
+    width: 20vw;
+}
+
+
+form div input[type="radio"] {
+    width: 30px;
+}
+
+.hr {
+    width: 90%;
 }
 
 .upload {
@@ -207,12 +240,8 @@ a:active {
     color: rgb(255, 0, 0);
 }
 
-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px;
-}
 
-.form div {
-    padding: 20px;
+.update form {
+    margin-top: 70px;
+    grid-gap: 30px;
 }
