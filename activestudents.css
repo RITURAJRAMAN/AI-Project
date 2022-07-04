@@ -96,7 +96,7 @@ a:active {
         height: 55%;
     }
 
-    .btn {
+    .smallbox .btn {
         font-size: 4vw;
         position: relative;
         bottom: 2px;
@@ -174,37 +174,6 @@ a:active {
     }
 }
 
-
-form {
-    /* border: 2px solid black; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-form div {
-    padding: 18px;
-    margin: auto;
-    font-size: 2rem;
-    font-weight: bold;
-    width: 100%;
-}
-
-form .btn {
-    padding: 0;
-    width: 15vw;
-    height: 40px;
-}
-
-input {
-    height: 30px;
-    width: 17vw;
-}
-
-
-form div input[type="radio"] {
-    width: 30px;
-}
-
 .hr {
     width: 90%;
 }
@@ -238,13 +207,75 @@ form div input[type="radio"] {
 }
 
 
-.update form {
-    margin-top: 70px;
-    grid-gap: 30px;
+form {
+    margin: 35px 0;
+    display: grid;
+    grid-row-gap: 25px;
+    grid-template-areas: 'uid section'
+        'name group'
+        'status submit';
 }
 
-@media only screen and (max-width: 700px) {
+form .design {
+    font-size: 2rem;
+    font-weight: bold;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+form div input {
+    width: 25vw;
+    height: 5vh;
+}
+
+form div select {
+    width: 25vw;
+    height: 6vh;
+    font-size: 1.2rem;
+}
+
+
+form div .btn {
+    width: 15vw;
+    height: 6vh;
+    font-size: 1.2rem;
+    margin: 0 8px;
+}
+
+
+@media only screen and (max-width: 645px) {
     form {
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 'uid'
+            'section'
+            'name'
+            'group'
+            'status'
+            'submit';
     }
+
+    form .design{
+        font-size: 1.4rem;
+    }
+
+    form div input {
+        width: 40vw;
+    }
+
+    form div select {
+        width: 40vw;
+    }
+
+    form div .btn {
+        width: auto;
+    }
+
+}
+
+.update {
+    height: 100%;
+}
+
+.update form {
+    margin-top: 80px;
+    grid-row-gap: 50px;
 }
