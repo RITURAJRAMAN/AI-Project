@@ -243,6 +243,31 @@ form div .btn {
 }
 
 
+#uid {
+    grid-area: uid;
+}
+
+#name {
+    grid-area: name;
+}
+
+#section {
+    grid-area: section;
+}
+
+#group {
+    grid-area: group;
+}
+
+#status {
+    grid-area: status;
+}
+
+#submit {
+    grid-area: submit;
+}
+
+
 @media only screen and (max-width: 700px) {
     form {
         grid-template-areas: 'uid'
